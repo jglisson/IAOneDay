@@ -145,6 +145,7 @@
     </Content>
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\iaoneday - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\iaonedayapi - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
