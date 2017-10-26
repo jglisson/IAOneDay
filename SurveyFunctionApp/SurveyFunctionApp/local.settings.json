@@ -1,0 +1,15 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=iaoneday;AccountKey=O/RkPyqpQYBitWZY30GwxtFKZ2Zk+5QE9+lpnJFABaHT8BLBIQ9x3955NfzFPcnfgSUYDnWKydKWf98mf/zyCw==",
+    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=iaoneday;AccountKey=O/RkPyqpQYBitWZY30GwxtFKZ2Zk+5QE9+lpnJFABaHT8BLBIQ9x3955NfzFPcnfgSUYDnWKydKWf98mf/zyCw==",
+    "eventHubConnectionString": "Endpoint=sb://iaoneday.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=UX02LrwwZOHez14wNWzlaLRqIq2M6yC8135z1AmWgfI=;EntityPath=surveys",
+    "cosmosDbUri": "https://iaoneday.documents.azure.com:443/",
+    "cosmosDbKey": "hcOMepxIaPXUPSyznSVhnP73QPABaZXjFHQPAov3e8EeLNPvU0pNVN3NTYbEceGs9lQzKcismQBsKQsz6fOnIA==",
+    "cosmosDbCollection": "Surveys",
+    "cosmosDbName": "SurveyArchive"    
+  },
+  "ConnectionStrings": {
+    "sqlDbConnectionString": "Server=tcp:iaoneday.database.windows.net,1433;Initial Catalog=iaoneday;Persist Security Info=False;User ID=iaoneday;Password=Fandango1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  }
+}

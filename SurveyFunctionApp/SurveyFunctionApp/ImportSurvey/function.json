@@ -1,0 +1,15 @@
+﻿{
+  "scriptFile": "..\\bin\\SurveyFunctionApp.dll",
+  "entryPoint": "SurveyFunctionApp.ImportSurvey.Run",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "path": "surveys",
+      "connection": "eventHubConnectionString",
+      "direction": "in",
+      "name": "survey",
+      "consumerGroup":  "$Default"
+    }
+  ],
+  "disabled": false
+}
