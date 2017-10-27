@@ -1,0 +1,124 @@
+{
+	"info": {
+		"name": "IAOneDay",
+		"_postman_id": "d65b5ac3-fc7d-326c-c5a8-7028fa77d145",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:21996/Api/Ping",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:21996/Api/Ping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "21996",
+					"path": [
+						"Api",
+						"Ping"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:21996/Api/Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"SurveyDateTime\": \"2017-10-26T12:11:00\",\n\t\"ParticipantName\": \"John Glisson\",\n\t\"EmailAddress\": \"john.glisson@gmail.com\",\n\t\"Restaurant\": 3,\n\t\"FoodQuality\": 3,\n\t\"ServiceQuality\": 3,\n\t\"EnvironmentQuality\": 3,\n\t\"Overall\": 3,\n\t\"Comments\": \"Not too shabby!\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:21996/Api/Create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "21996",
+					"path": [
+						"Api",
+						"Create"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://iaoneday.azurewebsites.net/api/ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://iaoneday.azurewebsites.net/api/ping",
+					"protocol": "http",
+					"host": [
+						"iaoneday",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"ping"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://iaoneday.azurewebsites.net/Api/Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"SurveyDateTime\": \"2017-10-26T12:11:00\",\n\t\"ParticipantName\": \"John Glisson\",\n\t\"EmailAddress\": \"john.glisson@gmail.com\",\n\t\"Restaurant\": \"Waffle House\",\n\t\"FoodQuality\": 2,\n\t\"ServiceQuality\": 3,\n\t\"EnvironmentQuality\": 2,\n\t\"Overall\": 2,\n\t\"Comments\": \"Not too shabby!\"\n}"
+				},
+				"url": {
+					"raw": "http://iaonedayapi.azurewebsites.net/Api/Create",
+					"protocol": "http",
+					"host": [
+						"iaonedayapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Api",
+						"Create"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
