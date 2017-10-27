@@ -1,0 +1,55 @@
+﻿.drop-shadow {
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.login-screen {
+    background-color: #333333;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.welcome-container {
+    background-color: #fff;
+    text-align: center;
+    width: 800px;
+}
+
+    .welcome-container h2 {
+        color: #333333;
+    }
+
+.logo {
+    margin-bottom:5px;
+}
+
+.text-left {
+    text-align:left;
+}
+
+.rating-stars .button .material-icons {
+    font-size: 40px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+/*.rating-stars .star-button.star-on .material-icons {
+    color: #003399;
+}
+
+.rating-stars .star-button.star-off .material-icons {
+    color: #99ccff;
+}*/
+
+md-input-container {
+    margin-top:-10px;
+    margin-bottom:0px;
+    padding-bottom:0px;
+}
+
+.btn-submit {
+    width: 300px;
+    color: #333333 !important;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 1.3em;
+}

@@ -127,7 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
@@ -146,6 +148,7 @@
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\iaoneday - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\iaonedayapi - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\IAOneDayAPI-JMorris - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

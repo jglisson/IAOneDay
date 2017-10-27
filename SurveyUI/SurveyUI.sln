@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SurveyUI(1)", "SurveyUI\", "{45E9CFCB-1AF3-49CD-9343-1D2F3FD776E4}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_58587"
+		Debug.AspNetCompiler.PhysicalPath = "SurveyUI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58587\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_58587"
+		Release.AspNetCompiler.PhysicalPath = "SurveyUI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58587\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58587"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45E9CFCB-1AF3-49CD-9343-1D2F3FD776E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E9CFCB-1AF3-49CD-9343-1D2F3FD776E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6027CA4-AD1A-45A1-98EC-EDE3F818D5C3}
+	EndGlobalSection
+EndGlobal
