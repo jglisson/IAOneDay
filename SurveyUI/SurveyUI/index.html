@@ -24,81 +24,84 @@
     <script src="/App/js/dataService.js" type="text/javascript"></script>
 </head>
 <body layout="column" ng-app="SurveyApp" ng-controller="surveyController as controller" ng-cloak class="login-screen">
-    <div layout="column" layout-align="center center" flex>
-        <img src="/App/images/Innovative-Architects-logo.gif" class="logo" />
-        <div layout="row" layout-align="center center">
-            <div layout="column" class="drop-shadow">
-                <md-content layout="column" layout-align="center center" class="welcome-container" layout-padding>
-                    <h1>Take the survey!</h1>
-                    <div layout="column" style="width:100%;" flex>
-                        <div layout="row" layout-align="start center">
-                            <md-input-container style="width:100%;">
-                                <h4 class="text-left">Restaurant</h4>
-                                <md-select ng-model="controller.survey.Restaurant" class="text-left">
-                                    <md-option value="Dreamland BBQ">Dreamland BBQ</md-option>
-                                    <md-option value="O4W Pizza">O4W Pizza</md-option>
-                                    <md-option value="Maple Street Biscuit Company">Maple Street Biscuit Company</md-option>
-                                    <md-option value="PURE Taqueria">PURE Taqueria</md-option>
-                                    <md-option value="Piatto Fresh Kitchen and Bar">Piatto Fresh Kitchen and Bar</md-option>
-                                    <md-option value="Opa! Gyros & Kebobs">Opa! Gyros &amp; Kebobs</md-option>
-                                    <md-option value="The Patio Bakery & Cafe">The Patio Bakery &amp; Cafe</md-option>
-                                </md-select>
-                            </md-input-container>
-                        </div>
-                        <div layout="row">
-                            <div flex></div>
-                            <div layout="column" layout-align="start center">
-                                <h4 class="text-left">Food Quality</h4>
-                                <jk-rating-stars max-rating="4" rating="controller.foodQuality" read-only="controller.readOnly" class="rating-stars" reset-allowed="false"></jk-rating-stars>
+    <form name="surveyForm" id="surveyForm">
+        <div layout="column" layout-align="center center" flex>
+            <img src="/App/images/Innovative-Architects-logo.gif" class="logo" />
+            <div layout="row" layout-align="center center">
+                <div layout="column" class="drop-shadow">
+                    <md-content layout="column" layout-align="center center" class="welcome-container" layout-padding>
+                        <h1>Take the survey!</h1>
+                        <div layout="column" style="width:100%;" flex>
+                            <div layout="row" layout-align="start center">
+                                <md-input-container style="width:100%;">
+                                    <h4 class="text-left">Restaurant</h4>
+                                    <md-select ng-model="controller.survey.Restaurant" class="text-left" required>
+                                        <md-option value="Dreamland BBQ">Dreamland BBQ</md-option>
+                                        <md-option value="O4W Pizza">O4W Pizza</md-option>
+                                        <md-option value="Maple Street Biscuit Company">Maple Street Biscuit Company</md-option>
+                                        <md-option value="PURE Taqueria">PURE Taqueria</md-option>
+                                        <md-option value="Piatto Fresh Kitchen and Bar">Piatto Fresh Kitchen and Bar</md-option>
+                                        <md-option value="Opa! Gyros & Kebobs">Opa! Gyros &amp; Kebobs</md-option>
+                                        <md-option value="The Patio Bakery & Cafe">The Patio Bakery &amp; Cafe</md-option>
+                                    </md-select>
+                                </md-input-container>
                             </div>
-                            <div flex></div>
-                            <div layout="column" layout-align="start center">
-                                <h4 class="text-left">Service Quality</h4>
-                                <jk-rating-stars max-rating="4" rating="controller.serviceQuality" read-only="controller.readOnly" class="rating-stars" reset-allowed="false"></jk-rating-stars>
+                            <div layout="row">
+                                <div flex></div>
+                                <div layout="column" layout-align="start center">
+                                    <h4 class="text-left">Food Quality</h4>
+                                    <jk-rating-stars max-rating="4" rating="controller.foodQuality" read-only="controller.readOnly" class="rating-stars" reset-allowed="false"></jk-rating-stars>
+                                </div>
+                                <div flex></div>
+                                <div layout="column" layout-align="start center">
+                                    <h4 class="text-left">Service Quality</h4>
+                                    <jk-rating-stars max-rating="4" rating="controller.serviceQuality" read-only="controller.readOnly" class="rating-stars" reset-allowed="false"></jk-rating-stars>
+                                </div>
+                                <div flex></div>
                             </div>
-                            <div flex></div>
-                        </div>
-                        <div layout="row">
-                            <div flex></div>
-                            <div layout="column" layout-align="start center">
-                                <h4 class="text-left">Environment Quality</h4>
-                                <jk-rating-stars max-rating="4" rating="controller.environmentQuality" read-only="controller.readOnly" class="rating-stars" reset-allowed="false"></jk-rating-stars>
+                            <div layout="row">
+                                <div flex></div>
+                                <div layout="column" layout-align="start center">
+                                    <h4 class="text-left">Environment Quality</h4>
+                                    <jk-rating-stars max-rating="4" rating="controller.environmentQuality" read-only="controller.readOnly" class="rating-stars" reset-allowed="false"></jk-rating-stars>
+                                </div>
+                                <div flex></div>
+                                <div layout="column" layout-align="start center">
+                                    <h4 class="text-left">Overall Quality</h4>
+                                    <jk-rating-stars max-rating="4" rating="controller.overallQuality" read-only="controller.readOnly" class="rating-stars" reset-allowed="false"></jk-rating-stars>
+                                </div>
+                                <div flex></div>
                             </div>
-                            <div flex></div>
-                            <div layout="column" layout-align="start center">
-                                <h4 class="text-left">Overall Quality</h4>
-                                <jk-rating-stars max-rating="4" rating="controller.overallQuality" read-only="controller.readOnly" class="rating-stars" reset-allowed="false"></jk-rating-stars>
+                            <div layout="row" layout-align="start center">
+                                <md-input-container style="width:100%;">
+                                    <h4 class="text-left">Your Name</h4>
+                                    <input ng-model="controller.survey.ParticipantName" required />
+                                </md-input-container>
                             </div>
-                            <div flex></div>
+                            <div layout="row" layout-align="start center">
+                                <md-input-container style="width:100%;">
+                                    <h4 class="text-left">Your Email Address (We won't spam you!) <span style="font-size:0.1em">probably</span></h4>
+                                    <input ng-model="controller.survey.EmailAddress" required />
+                                </md-input-container>
+                            </div>
+                            <div layout="row" layout-align="start center">
+                                <md-input-container style="width:100%;">
+                                    <h4 class="text-left">Comments</h4>
+                                    <textarea ng-model="controller.survey.Comments" md-maxlength="250" rows="3" md-select-on-focus required></textarea>
+                                </md-input-container>
+                            </div>
+                            <div layout="row">
+                                <div flex></div>
+                                <md-button ng-hide="controller.saving" class="md-raised md-primary btn-submit" ng-click="controller.submit()" ng-disabled="!controller.valid()">Submit!</md-button>
+                                <md-progress-linear ng-show="controller.saving"></md-progress-linear>
+                                <div flex></div>
+                            </div>
                         </div>
-                        <div layout="row" layout-align="start center">
-                            <md-input-container style="width:100%;">
-                                <h4 class="text-left">Your Name</h4>
-                                <input ng-model="controller.survey.ParticipantName" />
-                            </md-input-container>
-                        </div>
-                        <div layout="row" layout-align="start center">
-                            <md-input-container style="width:100%;">
-                                <h4 class="text-left">Your Email Address (We won't spam you!) <span style="font-size:0.1em">probably</span></h4>
-                                <input ng-model="controller.survey.EmailAddress" />
-                            </md-input-container>
-                        </div>
-                        <div layout="row" layout-align="start center">
-                            <md-input-container style="width:100%;">
-                                <h4 class="text-left">Comments</h4>
-                                <textarea ng-model="controller.survey.Comments" md-maxlength="250" rows="3" md-select-on-focus></textarea>
-                            </md-input-container>
-                        </div>
-                        <div layout="row">
-                            <div flex></div>
-                            <md-button class="md-raised md-primary btn-submit" ng-click="controller.submit()">Submit!</md-button>
-                            <div flex></div>
-                        </div>
-                    </div>
-                </md-content>
+                    </md-content>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
 </body>
 
 </html>

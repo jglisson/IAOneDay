@@ -1,4 +1,12 @@
-﻿.drop-shadow {
+﻿
+#surveyForm {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    margin-top: -60px;
+}
+
+.drop-shadow {
     box-shadow: 10px 10px 5px #888888;
 }
 
