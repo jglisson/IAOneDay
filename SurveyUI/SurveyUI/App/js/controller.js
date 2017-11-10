@@ -28,24 +28,24 @@
             controller.survey.SurveyDateTime = new Date();
             controller.survey.FoodQuality = controller.foodQuality - 1;
             controller.survey.ServiceQuality = controller.serviceQuality - 1;
-            controller.survey.EnvironmentQuality = controller.environmentQuality - 1; 
+            controller.survey.EnvironmentQuality = controller.environmentQuality - 1;
             controller.survey.Overall = controller.overallQuality - 1;
             dataService.createSurvey(controller.survey).then(function (result) {
-                $timeout(function () {
-                    controller.init();
-                    controller.saving = false;
-                    $scope.surveyForm.$setPristine();
-                    $scope.surveyForm.$setUntouched();
-                    $mdDialog.show(
-                        $mdDialog.alert()
-                            .parent(angular.element(document.querySelector('.welcome-container')))
-                            .clickOutsideToClose(true)
-                            .title('Thank you!')
-                            .textContent('Thank you for your feedback. And your email address. We especially appreciate that. We seriously cannot wait to creep on you. I can see you through your web cam right now. You have pretty eyes.')
-                            .ariaLabel('Thank you')
-                            .ok('Get me out of here!')
-                    );
-                }, 1500);
+
+                controller.init();
+                controller.saving = false;
+                $scope.surveyForm.$setPristine();
+                $scope.surveyForm.$setUntouched();
+                $mdDialog.show(
+                    $mdDialog.alert()
+                        .parent(angular.element(document.querySelector('.welcome-container')))
+                        .clickOutsideToClose(true)
+                        .title('Thank you!')
+                        .textContent('Thank you for your feedback. And your email address. We especially appreciate that. We seriously cannot wait to creep on you. I can see you through your web cam right now. You have pretty eyes.')
+                        .ariaLabel('Thank you')
+                        .ok('Get me out of here!')
+                );
+
             }, function (error) {
                 $timeout(function () {
                     controller.saving = false;
